@@ -28,7 +28,7 @@ def print_word_freq(file):
     for word in new_text:
         word_freq[word] = word_freq.get(word, 0) +1
 
-    word_freq = {key: value for key, value in word_freq.items() if value >=6}
+    word_freq = {key: value for key, value in word_freq.items() if value >=1}
     
     sorted_text = sorted(word_freq.items(), key=lambda seq: seq[1], reverse=True)
     
